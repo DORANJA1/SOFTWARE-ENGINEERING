@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     //환자 정보 저장
+    //     //이름,나이,주소,질병정보
+    //     //질병정보는 질병코드및 병명
+    //     //환자 정보 구조를 클로저를 이용하여 구현
+
+    //     const patientInfo = function(name, age, adress, disInfo) 
+    //     {
+
+    //         return{
+
+    //             setName:function(_name){
+    //                 name=_name;
+    //             },
+
+    //             setAge: function(_age){
+    //                 age=_age;
+    //             },
+
+    //             setAdress:function(_adress){
+    //                 adress=_adress;
+    //             },
+
+    //             setDis: function(_dis){
+    //                 disInfo.code=_dis.code;
+    //                 disInfo.name=_dis.name;
+    //             },
+
+        
+    //             getName(){
+    //                 return name;        
+    //             },
+                
+    //             getAge(){            
+    //                 return age;        
+    //             },
+        
+    //             getAdress(){        
+    //                 return adress;        
+    //             },
+        
+    //             getDisInfo(){        
+    //                 return disInfo;        
+    //             }
+    
+    //         };
+    //     }
+
+    // const patient = patientInfo("홍길동",25,"non",{code:'dis123', name:'감기'});
+
+
+    // console.log('환자명 : '+patient.getName());
+    // console.log('나이 : '+patient.getAge());
+    // console.log('주소 : '+patient.getAdress());
+    // console.log('병명 : '+patient.getDisInfo().name);
+    
+    const callbackDOMLoaded = function()
+    {
+        document.body.innerHTML +="<h1> Hello World</h1>";
+    }
+
+    window.addEventListener('Domcontentloaded', callbackDOMLoaded);
+
+    </script>
+</body>
+</html>

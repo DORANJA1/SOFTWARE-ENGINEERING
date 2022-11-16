@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+<title>docs.</title>
+
+<script>
+    console.log("hello");
+    alert("안녕모태")
+
+</script>
+
+
+
+</head>
+<body>
+    <script>
+        // //변수를 선언할때 변수형 var + 변수명
+        // var a = 10;
+        // var b = 20;
+        // var str2 ="banana";
+
+        // // console.log(str1.length)
+
+        // console.log(a);
+        // console.log(b);
+
+        // console.log(a+b);
+
+        // if(a>b){
+        //     console.log("a가 b보다 큽니다")
+        // }else{
+        //     console.log("b가 a보다 큽니다")
+        // }
+
+        // // console.log(`i love ${str1}and ${str2}`);
+
+        // // console.log(str0+ " loves "+ str1+" and "+str2)
+        // document.body.innerHTML = "<h1>Hello world</h1>";
+
+
+        
+//         const input = prompt("CM를 입력하시오", "cm");
+//         let result =number(input)/2.54;
+//         console.log(result);
+//         alert(result);
+
+//         const input1 = prompt("원의 반지름을 입력하시오", "반지름")
+//         let result1 =numer(input1*input1)
+//         console.log(result1);
+//         alert(result1);
+
+
+//         var ulEliment = 
+//         "<ul> \
+//             <li>딸기</li>\
+//             <li>사과</li>\
+//             <li>바네노</li>\
+//         </ul>";
+
+
+// var str = "동해물과 백두산이 마르고 닳도록 하나님이 보우하사 우리나라만세";
+
+// var point= str.indexOf("백두산");
+// var endP =str.length;
+// var result2 = str.splice(0, point);
+// var result3 = str.splice(point+3, endP);
+
+// console.log(result2+result3);
+
+
+let example = "동해물과 백두산이 마르고 닳도록 벡두산 백두산 벡터산 끼토산";
+let trans = [...example];
+let word = "백두산";
+
+while(true){
+
+    let point = example.indexOf(word);
+
+    if(example.indexOf(word)==-1)
+        break;
+    
+
+    trans.splice(point, word.length);
+    example=trans.join("");
+}
+
+console.log(example);
+
+</script>
+
+<!-- 
+// <li><a href="#">"사과"</a></li>
+// <li><a href="#">"복숭아"</a></li>
+// <li><a href="#">"딸기"</a></li> -->
+
+
+
+</body>
+</html>

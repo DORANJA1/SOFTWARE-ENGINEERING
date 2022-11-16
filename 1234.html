@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// var a = 10;
+// console.log(a);
+
+// let k = 1;
+// k= "abc";
+
+// console.log(typeof(a));
+
+
+// let str1 = "123asd";
+// let str2 = "fff";
+// let str3 = ("sad", 123);
+
+// console.log(str3);
+
+
+// //선언함수 : 함수명이 존재
+// function myFunc(a, b){
+
+//     return a+b;
+// }
+
+//익명함수 : 함수명이 존재하지 않음 
+
+
+
+
+// const forEach = function(ar,f){
+
+// }
+// const ar = [11,22,33,44,55];
+// const func = function(a,b,c){
+
+
+// }
+
+// forEach(ar, func);
+
+// const myCallback = function(){
+
+// }
+
+// const numbers =[10,20,30,40,50];
+// const newNumbers = numbers.map(function(value, index,array){
+//     return value + 5});
+
+//     console.log(newNumbers);
+
+
+    // const mans = ['홍길동','세종대왕','김구','안중근'];
+    // const mentions = mans.map(function(value,index,Array){
+    //     return "훌륭한 "+value;
+    // })
+
+    // console.log(mentions);
+
+
+    // const new_num = numbers.map((value)=> value + 5).filter((value)=>value>30);
+
+    // console.log(new_num);
+
+
+    //배열의 요소에 5를 더한뒤 30보다 큰 값만 리턴한다
+
+    // const numbers =[1,2,3,4,5,6,7,8,9,10];
+
+    // const newNumbers = numbers.filter((value)=>((value%2)==0)).map((value)=>value*2);
+
+    // console.log(newNumbers);
+
+//    (function(){})();
+
+//     (function(){
+//         const product = {
+//             name: "mouse",
+//             type: "wireless",
+//             color: "black",
+//             buttons: 6,
+//             scroll:true
+//         }
+    
+
+
+
+//     console.log(product);
+//     console.log(typeof(product));
+//     console.log(product.name);
+//     console.log(product['type']);
+//     console.log(product.buttons);
+//     console.log(product.scroll);
+//     });
+    
+
+
+    // const student={
+    //     name: "seunghoon kwak",
+    //     age: 27,
+    //     ID: "44395515",
+    //     score: [80,70,85],
+    //     getTotal: function(){
+    //         let total=0;
+    //         for(const val of this.score){
+    //             total=total+val;
+    //         }
+    //         return total;
+    //     }
+
+       
+
+    // }
+
+    // printName: ()=>{
+    //         console.log(this.name);
+    //         console.log(student.name);
+    //     }
+
+    // console.log(student);
+    // console.log(typeof(student));
+    // console.log(student.name);
+    // console.log(student.age);
+    // console.log(student.ID);
+    // console.log(student.getTotal());
+    // delete student.age;
+    // console.log(student.age);
+    
+
+
+    (function(){
+        const product={
+            name: "Macbook pro",
+            type: "laptop",
+            USB: 3,
+            price: 1300,
+            selectedlang: undefined,
+            getPrice(count){
+                let total=count*this.price;
+                if(count>=10){
+                total=total*0.9;
+            }
+
+            return total;
+            },
+
+        printName(){
+            console.log(this.name); 
+        }
+    }
+
+
+    product.language= ["kor", "cha", "eng", "jpn"];
+
+
+    product.printName();
+  
+    console.log(product.getPrice(11));
+    console.log(product.getPrice(1));
+    console.log(product.getPrice(9));
+
+})();
+    </script>
+</body>
+</html>
