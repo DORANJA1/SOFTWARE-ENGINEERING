@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+html
+{
+    font-size: 14px;
+    font-family:'Noto Sans KR', sans-serif;
+    
+}
+body
+{
+    overflow-x: hidden;
+    letter-spacing: 2px;
+    background-color:black;
+}
+
+.global-navi-linked
+{
+    margin-left: 250px;
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.global-navi
+{
+    
+}
+
+.local-navi{
+
+}
+
+.local-navi-linked{
+    
+    text-decoration: none;
+    color: white;
+}
+
+.section-0
+{
+   
+}
+
+.Introduce-mantion
+{
+    text-align: center;
+    color: white;
+}
+
+.animation-mention
+{
+    text-align: center;
+    color: white;
+}
+
+.section-1-message{
+    color: white;
+}
