@@ -15,7 +15,8 @@
 
 </head>
 
-<body>
+<body id="show-section0">
+    <!-- 윗머리글 의클래스 설정 및 이름 부여 -->
     <nav class="global-nav">
         <div class="global-nav-links">
             <a href="#" class="global-nav-link">Home</a>
@@ -25,6 +26,7 @@
         </div>
     </nav>
 
+    <!-- 윗머리글 의클래스 설정 및 이름 부여 -->
     <nav class="local-nav">
         <div class="local-nav-links">
             <a href="#" class="local-nav-product-link">Real Apple Pro</a>
@@ -34,37 +36,43 @@
         </div>
     </nav>
    
-
+    <!-- 섹션0으로 식별자 부여  및 스크롤 섹션 부여-->
     <section id="section-0" class="scroll-section">
 
-        <div class="product-name">
-            <h1>Real Apple Pro</h1>
+        <div class="section0-product-name">
+            <h1 class="product-name">Real Apple Pro</h1>
         </div>
-        
-        <div class="sticky-element section0-message">
+
+        <div class="sticky-element section0-canvas">
+            <canvas id="main-canvas" width="1920" height="1080"></canvas>
+        </div>
+        <!-- 이하 스티키 엘리먼트에 고유 메세지 코드 부여 -->
+        <div class="sticky-element section0-message a">
             <p>온전히 빠져들게 하는 빛깔</p>
         </div>
         
-        <div class="sticky-element section0-message">
+        <div class="sticky-element section0-message b">
             <p>나의 건강을 채워주는 향기</p>
         </div>
         
-        <div class="sticky-element section0-message">
+        <div class="sticky-element section0-message c">
             <p>깨끗한 자연의 신선함</p>
         </div>
         
-        <div class="sticky-element section0-message">
-             <p>새롭게 입가를 찾아온 매혹</p>
+        <div class="sticky-element section0-message d">
+            <p>새롭게 입가를 찾아온 매혹</p>
         </div>
         
 
     </section>
 
 
+    <!-- 상단의 메세지와 다른 용도로 사용될 섹션 생성 및 스크롤 클래스 부여 -->
     <section id="section-1" class="scroll-section">
 
+        <!-- 메세지에 클래스 부여 -->
         <div class="section1-message">
-            <p>
+            <p class="section1-description">
                 <strong>진짜 사과 이야기</strong>
                 사과를 매일 하나씩 먹으면 의사 볼 일이 없다
                 (an apple a day keeps the doctor away)란 속담이 있을 정도로 
@@ -83,6 +91,8 @@
             </p>
         </div>
     </section>
+    
+    <!-- 푸터 세팅 -->
     <footer>
         <div>
             <p>Copyleft 2022 Jeong Sung Hoon Allright reserved.</p>

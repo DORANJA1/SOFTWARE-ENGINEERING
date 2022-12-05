@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 4rem;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>HELLO</h1>
+    <input id="fade-in" type="button" value="Fade-in">
+    <input id="fade-out" type="button" value="Fade-out">
+
+    <script>
+    (()=>{
+        const h1Message = document.querySelector('h1');
+        const btnFadeIn = document.querySelector('#fade-in');
+        const btnFadeOut = document.querySelector('#fade-out');
+
+        let tid;        // interval id;
+        let count = 0;                
+        let opacityValue = 1;
+        let bRun = false;
+
+        btnFadeIn.addEventListener('click', ()=>{
+
+            if (bRun === true)
+            {                
+                return;
+            
+            }
+
+            bRun = true;
+            
+            tid = setInterval(()=>{                
+                h1Message.style.opacity = opacityValue;
+                
+                if (opacityValue <= 0)
+                    opacityValue = 0;
+                else
+                    opacityValue = opacityValue - 0.014;
+
+                count++;
+                if (count === 75)
+                {
+                    clearInterval(tid);
+                    h1Message.style.opacity = 1;
+                    opacityValue = 1;
+                    count = 0;
+                    bRun = false;
+                    console.log("Stop~~~~~");
+
+                }
+
+            _}, 20);
+
+        });
+
+        btnFadeOut.addEventListener('click', ()=>{
+            
+
+        });
+
+
+    })();
+    </script>
+</body>
+
+</html>
